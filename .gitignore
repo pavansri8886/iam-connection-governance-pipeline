@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.txt
+
+# Output folders
+output/
+reports/
+logs/
+
+# Data files (if they should not be versioned)
+data/*.csv
+data/*.json
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+*.env
+.env.*
