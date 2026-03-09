@@ -21,13 +21,10 @@ Thumbs.db
 *.txt
 
 # Output folders
-output/
-reports/
+
 logs/
 
 # Data files (if they should not be versioned)
-data/*.csv
-data/*.json
 
 # Jupyter checkpoints
 .ipynb_checkpoints/

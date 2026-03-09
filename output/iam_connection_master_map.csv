@@ -1,0 +1,256 @@
+connection_id,app_id,app_name,owner,department,environment,data_sensitivity,business_critical,iam_product_id,product_name,type,connection_status,last_reviewed,reviewed_by,days_since_review,is_stale,risk_range
+CONN0001,APP001,SAP HR Core,hr.admin@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-15,hr.admin@cmacgm.com,84.0,False,HIGH
+CONN0002,APP001,SAP HR Core,hr.admin@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2024-12-24,hr.admin@cmacgm.com,440.0,True,HIGH
+CONN0003,APP001,SAP HR Core,hr.admin@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-09-28,hr.admin@cmacgm.com,162.0,False,HIGH
+CONN0004,APP001,SAP HR Core,hr.admin@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-12-14,hr.admin@cmacgm.com,85.0,False,HIGH
+CONN0005,APP001,SAP HR Core,hr.admin@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2024-04-27,hr.admin@cmacgm.com,681.0,True,HIGH
+CONN0006,APP002,SAP Finance ERP,cfo.office@cmacgm.com,Finance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0007,APP002,SAP Finance ERP,cfo.office@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,PENDING,,UNKNOWN,,False,HIGH
+CONN0008,APP002,SAP Finance ERP,cfo.office@cmacgm.com,Finance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-19,cfo.office@cmacgm.com,80.0,False,HIGH
+CONN0009,APP002,SAP Finance ERP,cfo.office@cmacgm.com,Finance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-02,cfo.office@cmacgm.com,35.0,False,HIGH
+CONN0010,APP002,SAP Finance ERP,cfo.office@cmacgm.com,Finance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-02-08,cfo.office@cmacgm.com,29.0,False,HIGH
+CONN0011,APP003,Vessel Tracking System,fleet.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-03-15,fleet.ops@cmacgm.com,724.0,True,HIGH
+CONN0012,APP003,Vessel Tracking System,fleet.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-05,fleet.ops@cmacgm.com,155.0,False,HIGH
+CONN0013,APP003,Vessel Tracking System,fleet.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-10-25,fleet.ops@cmacgm.com,135.0,False,HIGH
+CONN0014,APP003,Vessel Tracking System,fleet.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,PENDING,,UNKNOWN,,False,HIGH
+CONN0015,APP004,Customer Portal,digital@cmacgm.com,Commercial,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-06,digital@cmacgm.com,154.0,False,HIGH
+CONN0016,APP004,Customer Portal,digital@cmacgm.com,Commercial,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2024-11-15,digital@cmacgm.com,479.0,True,HIGH
+CONN0017,APP004,Customer Portal,digital@cmacgm.com,Commercial,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-11-23,digital@cmacgm.com,106.0,False,HIGH
+CONN0018,APP004,Customer Portal,digital@cmacgm.com,Commercial,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-18,digital@cmacgm.com,111.0,False,HIGH
+CONN0019,APP005,Freight Booking Platform,booking@cmacgm.com,Commercial,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0020,APP005,Freight Booking Platform,booking@cmacgm.com,Commercial,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-09-20,booking@cmacgm.com,170.0,False,HIGH
+CONN0021,APP005,Freight Booking Platform,booking@cmacgm.com,Commercial,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-17,booking@cmacgm.com,20.0,False,HIGH
+CONN0022,APP005,Freight Booking Platform,booking@cmacgm.com,Commercial,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-07,booking@cmacgm.com,30.0,False,HIGH
+CONN0023,APP005,Freight Booking Platform,booking@cmacgm.com,Commercial,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-10-14,booking@cmacgm.com,146.0,False,HIGH
+CONN0024,APP006,Port Operations Dashboard,port.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,PENDING,,UNKNOWN,,False,HIGH
+CONN0025,APP006,Port Operations Dashboard,port.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-01,port.ops@cmacgm.com,98.0,False,HIGH
+CONN0026,APP006,Port Operations Dashboard,port.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-31,port.ops@cmacgm.com,129.0,False,HIGH
+CONN0027,APP006,Port Operations Dashboard,port.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0028,APP006,Port Operations Dashboard,port.ops@cmacgm.com,Operations,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-12,port.ops@cmacgm.com,87.0,False,HIGH
+CONN0029,APP007,Payroll System,hr.payroll@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-08,hr.payroll@cmacgm.com,91.0,False,HIGH
+CONN0030,APP007,Payroll System,hr.payroll@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-09-20,hr.payroll@cmacgm.com,170.0,False,HIGH
+CONN0031,APP007,Payroll System,hr.payroll@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-09-29,hr.payroll@cmacgm.com,161.0,False,HIGH
+CONN0032,APP007,Payroll System,hr.payroll@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-01-13,UNKNOWN,55.0,False,HIGH
+CONN0033,APP007,Payroll System,hr.payroll@cmacgm.com,Human Resources,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-22,hr.payroll@cmacgm.com,77.0,False,HIGH
+CONN0034,APP008,Treasury Management System,treasury@cmacgm.com,Finance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-25,treasury@cmacgm.com,43.0,False,HIGH
+CONN0035,APP008,Treasury Management System,treasury@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-17,UNKNOWN,82.0,False,HIGH
+CONN0036,APP008,Treasury Management System,treasury@cmacgm.com,Finance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-27,treasury@cmacgm.com,133.0,False,HIGH
+CONN0037,APP008,Treasury Management System,treasury@cmacgm.com,Finance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-09-28,treasury@cmacgm.com,162.0,False,HIGH
+CONN0038,APP008,Treasury Management System,treasury@cmacgm.com,Finance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-11-22,treasury@cmacgm.com,107.0,False,HIGH
+CONN0039,APP009,Legal Document Management,legal@cmacgm.com,Legal,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-12-11,legal@cmacgm.com,453.0,True,HIGH
+CONN0040,APP009,Legal Document Management,legal@cmacgm.com,Legal,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-09-29,legal@cmacgm.com,161.0,False,HIGH
+CONN0041,APP009,Legal Document Management,legal@cmacgm.com,Legal,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-09-23,legal@cmacgm.com,167.0,False,HIGH
+CONN0042,APP009,Legal Document Management,legal@cmacgm.com,Legal,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-01-22,legal@cmacgm.com,46.0,False,HIGH
+CONN0043,APP010,Email Gateway,it.admin@cmacgm.com,IT,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-23,it.admin@cmacgm.com,137.0,False,HIGH
+CONN0044,APP010,Email Gateway,it.admin@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-25,it.admin@cmacgm.com,12.0,False,HIGH
+CONN0045,APP010,Email Gateway,it.admin@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2024-04-06,it.admin@cmacgm.com,702.0,True,HIGH
+CONN0046,APP010,Email Gateway,it.admin@cmacgm.com,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-11-20,it.admin@cmacgm.com,109.0,False,HIGH
+CONN0047,APP011,VPN & Remote Access Gateway,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-31,it.security@cmacgm.com,37.0,False,HIGH
+CONN0048,APP011,VPN & Remote Access Gateway,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2024-02-04,it.security@cmacgm.com,764.0,True,HIGH
+CONN0049,APP011,VPN & Remote Access Gateway,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-08-03,it.security@cmacgm.com,218.0,True,HIGH
+CONN0050,APP011,VPN & Remote Access Gateway,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0051,APP011,VPN & Remote Access Gateway,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,PENDING,,UNKNOWN,,False,HIGH
+CONN0052,APP012,Active Directory,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-02-08,it.iam@cmacgm.com,29.0,False,HIGH
+CONN0053,APP012,Active Directory,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-02-13,it.iam@cmacgm.com,24.0,False,HIGH
+CONN0054,APP012,Active Directory,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-23,it.iam@cmacgm.com,45.0,False,HIGH
+CONN0055,APP012,Active Directory,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-11,it.iam@cmacgm.com,118.0,False,HIGH
+CONN0056,APP012,Active Directory,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-11-29,it.iam@cmacgm.com,100.0,False,HIGH
+CONN0057,APP013,Azure AD,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-05-07,it.iam@cmacgm.com,306.0,True,HIGH
+CONN0058,APP013,Azure AD,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2024-03-11,it.iam@cmacgm.com,728.0,True,HIGH
+CONN0059,APP013,Azure AD,it.iam@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-07-11,it.iam@cmacgm.com,241.0,True,HIGH
+CONN0060,APP014,CEVA Logistics TMS,logistics.ops@cmacgm.com,Logistics,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-30,logistics.ops@cmacgm.com,130.0,False,HIGH
+CONN0061,APP014,CEVA Logistics TMS,logistics.ops@cmacgm.com,Logistics,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-01-14,logistics.ops@cmacgm.com,54.0,False,HIGH
+CONN0062,APP014,CEVA Logistics TMS,logistics.ops@cmacgm.com,Logistics,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-06-14,logistics.ops@cmacgm.com,268.0,True,HIGH
+CONN0063,APP014,CEVA Logistics TMS,logistics.ops@cmacgm.com,Logistics,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-01-06,logistics.ops@cmacgm.com,62.0,False,HIGH
+CONN0064,APP015,Air Cargo Booking System,aircargo@cmacgm.com,Air Cargo,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-25,aircargo@cmacgm.com,135.0,False,HIGH
+CONN0065,APP015,Air Cargo Booking System,aircargo@cmacgm.com,Air Cargo,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-11,aircargo@cmacgm.com,88.0,False,HIGH
+CONN0066,APP015,Air Cargo Booking System,aircargo@cmacgm.com,Air Cargo,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-04,aircargo@cmacgm.com,95.0,False,HIGH
+CONN0067,APP015,Air Cargo Booking System,aircargo@cmacgm.com,Air Cargo,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,PENDING,,UNKNOWN,,False,HIGH
+CONN0068,APP015,Air Cargo Booking System,aircargo@cmacgm.com,Air Cargo,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-11-05,aircargo@cmacgm.com,124.0,False,HIGH
+CONN0069,APP016,Container Tracking API,api.team@cmacgm.com,IT,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-26,api.team@cmacgm.com,134.0,False,HIGH
+CONN0070,APP016,Container Tracking API,api.team@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-13,api.team@cmacgm.com,116.0,False,HIGH
+CONN0071,APP016,Container Tracking API,api.team@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-22,api.team@cmacgm.com,77.0,False,HIGH
+CONN0072,APP016,Container Tracking API,api.team@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-29,api.team@cmacgm.com,100.0,False,HIGH
+CONN0073,APP017,Customs Clearance Platform,customs@cmacgm.com,Compliance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-02-17,customs@cmacgm.com,20.0,False,HIGH
+CONN0074,APP017,Customs Clearance Platform,customs@cmacgm.com,Compliance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-01-10,customs@cmacgm.com,58.0,False,HIGH
+CONN0075,APP017,Customs Clearance Platform,customs@cmacgm.com,Compliance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-07,UNKNOWN,153.0,False,HIGH
+CONN0076,APP017,Customs Clearance Platform,customs@cmacgm.com,Compliance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-20,customs@cmacgm.com,17.0,False,HIGH
+CONN0077,APP017,Customs Clearance Platform,customs@cmacgm.com,Compliance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-01-22,customs@cmacgm.com,46.0,False,HIGH
+CONN0078,APP018,Trade Finance Platform,tradefinance@cmacgm.com,Finance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-14,tradefinance@cmacgm.com,146.0,False,HIGH
+CONN0079,APP018,Trade Finance Platform,tradefinance@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-21,tradefinance@cmacgm.com,108.0,False,HIGH
+CONN0080,APP018,Trade Finance Platform,tradefinance@cmacgm.com,Finance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-01-23,tradefinance@cmacgm.com,45.0,False,HIGH
+CONN0081,APP019,Risk Management System,risk@cmacgm.com,Compliance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-06-03,risk@cmacgm.com,644.0,True,HIGH
+CONN0082,APP019,Risk Management System,risk@cmacgm.com,Compliance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-10-03,risk@cmacgm.com,157.0,False,HIGH
+CONN0083,APP019,Risk Management System,risk@cmacgm.com,Compliance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-28,risk@cmacgm.com,71.0,False,HIGH
+CONN0084,APP019,Risk Management System,risk@cmacgm.com,Compliance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-06-02,risk@cmacgm.com,280.0,True,HIGH
+CONN0085,APP019,Risk Management System,risk@cmacgm.com,Compliance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,PENDING,,UNKNOWN,,False,HIGH
+CONN0086,APP020,Procurement Platform,procurement@cmacgm.com,Finance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-02-22,procurement@cmacgm.com,15.0,False,HIGH
+CONN0087,APP020,Procurement Platform,procurement@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-09,procurement@cmacgm.com,120.0,False,HIGH
+CONN0088,APP020,Procurement Platform,procurement@cmacgm.com,Finance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-02,procurement@cmacgm.com,66.0,False,HIGH
+CONN0089,APP020,Procurement Platform,procurement@cmacgm.com,Finance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-01-05,procurement@cmacgm.com,63.0,False,HIGH
+CONN0090,APP020,Procurement Platform,procurement@cmacgm.com,Finance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-06,procurement@cmacgm.com,93.0,False,HIGH
+CONN0091,APP021,Fleet Maintenance System,fleet.maintenance@cmacgm.com,Operations,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-11-06,fleet.maintenance@cmacgm.com,123.0,False,HIGH
+CONN0092,APP021,Fleet Maintenance System,fleet.maintenance@cmacgm.com,Operations,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-10,fleet.maintenance@cmacgm.com,119.0,False,HIGH
+CONN0093,APP021,Fleet Maintenance System,fleet.maintenance@cmacgm.com,Operations,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-26,fleet.maintenance@cmacgm.com,73.0,False,HIGH
+CONN0094,APP021,Fleet Maintenance System,fleet.maintenance@cmacgm.com,Operations,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-02,fleet.maintenance@cmacgm.com,35.0,False,HIGH
+CONN0095,APP021,Fleet Maintenance System,fleet.maintenance@cmacgm.com,Operations,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-10-10,fleet.maintenance@cmacgm.com,150.0,False,HIGH
+CONN0096,APP022,Crew Management System,crew.mgmt@cmacgm.com,Operations,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-28,crew.mgmt@cmacgm.com,40.0,False,HIGH
+CONN0097,APP022,Crew Management System,crew.mgmt@cmacgm.com,Operations,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-05-17,crew.mgmt@cmacgm.com,296.0,True,HIGH
+CONN0098,APP022,Crew Management System,crew.mgmt@cmacgm.com,Operations,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,PENDING,,UNKNOWN,,False,HIGH
+CONN0099,APP022,Crew Management System,crew.mgmt@cmacgm.com,Operations,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-09-22,crew.mgmt@cmacgm.com,168.0,False,HIGH
+CONN0100,APP022,Crew Management System,crew.mgmt@cmacgm.com,Operations,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-31,crew.mgmt@cmacgm.com,68.0,False,HIGH
+CONN0101,APP023,Port Agency Management,port.agency@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-02,port.agency@cmacgm.com,158.0,False,MEDIUM
+CONN0102,APP023,Port Agency Management,port.agency@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-19,port.agency@cmacgm.com,110.0,False,MEDIUM
+CONN0103,APP024,Dangerous Goods Management,hse@cmacgm.com,HSE,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-10,hse@cmacgm.com,150.0,False,HIGH
+CONN0104,APP024,Dangerous Goods Management,hse@cmacgm.com,HSE,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-02-21,hse@cmacgm.com,16.0,False,HIGH
+CONN0105,APP024,Dangerous Goods Management,hse@cmacgm.com,HSE,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-02,hse@cmacgm.com,35.0,False,HIGH
+CONN0106,APP024,Dangerous Goods Management,hse@cmacgm.com,HSE,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-01-24,hse@cmacgm.com,44.0,False,HIGH
+CONN0107,APP024,Dangerous Goods Management,hse@cmacgm.com,HSE,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-10-28,hse@cmacgm.com,132.0,False,HIGH
+CONN0108,APP025,Invoice Processing System,finance.ops@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-23,finance.ops@cmacgm.com,106.0,False,HIGH
+CONN0109,APP025,Invoice Processing System,finance.ops@cmacgm.com,Finance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-03-04,finance.ops@cmacgm.com,370.0,True,HIGH
+CONN0110,APP025,Invoice Processing System,finance.ops@cmacgm.com,Finance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-10-26,UNKNOWN,134.0,False,HIGH
+CONN0111,APP025,Invoice Processing System,finance.ops@cmacgm.com,Finance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-26,finance.ops@cmacgm.com,73.0,False,HIGH
+CONN0112,APP026,CRM Salesforce,sales@cmacgm.com,Commercial,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-31,sales@cmacgm.com,68.0,False,MEDIUM
+CONN0113,APP026,CRM Salesforce,sales@cmacgm.com,Commercial,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-07-13,sales@cmacgm.com,239.0,True,MEDIUM
+CONN0114,APP027,Marketing Automation,marketing@cmacgm.com,Commercial,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2025-11-14,marketing@cmacgm.com,115.0,False,MEDIUM
+CONN0115,APP027,Marketing Automation,marketing@cmacgm.com,Commercial,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-08,marketing@cmacgm.com,152.0,False,MEDIUM
+CONN0116,APP027,Marketing Automation,marketing@cmacgm.com,Commercial,Production,MEDIUM,No,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-05-31,marketing@cmacgm.com,282.0,True,MEDIUM
+CONN0117,APP028,Business Intelligence Platform,bi.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-02-04,bi.team@cmacgm.com,33.0,False,MEDIUM
+CONN0118,APP028,Business Intelligence Platform,bi.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-27,bi.team@cmacgm.com,41.0,False,MEDIUM
+CONN0119,APP028,Business Intelligence Platform,bi.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2024-06-28,bi.team@cmacgm.com,619.0,True,MEDIUM
+CONN0120,APP029,Data Warehouse,data.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-03,data.platform@cmacgm.com,65.0,False,HIGH
+CONN0121,APP029,Data Warehouse,data.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-01-15,data.platform@cmacgm.com,53.0,False,HIGH
+CONN0122,APP029,Data Warehouse,data.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-03,data.platform@cmacgm.com,65.0,False,HIGH
+CONN0123,APP029,Data Warehouse,data.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-17,data.platform@cmacgm.com,20.0,False,HIGH
+CONN0124,APP029,Data Warehouse,data.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-01-23,data.platform@cmacgm.com,45.0,False,HIGH
+CONN0125,APP030,Compliance Reporting Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-28,compliance@cmacgm.com,71.0,False,HIGH
+CONN0126,APP030,Compliance Reporting Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-09-25,compliance@cmacgm.com,165.0,False,HIGH
+CONN0127,APP030,Compliance Reporting Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2024-05-05,compliance@cmacgm.com,673.0,True,HIGH
+CONN0128,APP030,Compliance Reporting Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-10-06,compliance@cmacgm.com,154.0,False,HIGH
+CONN0129,APP031,Internal Intranet,comms@cmacgm.com,Communications,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-04,comms@cmacgm.com,95.0,False,MEDIUM
+CONN0130,APP031,Internal Intranet,comms@cmacgm.com,Communications,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-09-22,comms@cmacgm.com,168.0,False,MEDIUM
+CONN0131,APP031,Internal Intranet,comms@cmacgm.com,Communications,Production,MEDIUM,No,IAM004,Multi-Factor Authentication (MFA),Authentication,PENDING,,UNKNOWN,,False,MEDIUM
+CONN0132,APP032,Learning Management System,hr.learning@cmacgm.com,Human Resources,Production,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-05,hr.learning@cmacgm.com,32.0,False,LOW
+CONN0133,APP033,IT Service Desk ServiceNow,it.servicedesk@cmacgm.com,IT,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-21,it.servicedesk@cmacgm.com,139.0,False,MEDIUM
+CONN0134,APP033,IT Service Desk ServiceNow,it.servicedesk@cmacgm.com,IT,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-25,it.servicedesk@cmacgm.com,43.0,False,MEDIUM
+CONN0135,APP033,IT Service Desk ServiceNow,it.servicedesk@cmacgm.com,IT,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-17,it.servicedesk@cmacgm.com,112.0,False,MEDIUM
+CONN0136,APP034,SIEM Splunk,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0137,APP034,SIEM Splunk,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-09-30,it.security@cmacgm.com,160.0,False,HIGH
+CONN0138,APP034,SIEM Splunk,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-26,it.security@cmacgm.com,103.0,False,HIGH
+CONN0139,APP034,SIEM Splunk,it.security@cmacgm.com,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-01-14,it.security@cmacgm.com,54.0,False,HIGH
+CONN0140,APP035,Privileged Access Workstation,UNKNOWN,IT,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0141,APP035,Privileged Access Workstation,UNKNOWN,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-29,UNKNOWN,70.0,False,HIGH
+CONN0142,APP035,Privileged Access Workstation,UNKNOWN,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-11-14,UNKNOWN,115.0,False,HIGH
+CONN0143,APP035,Privileged Access Workstation,UNKNOWN,IT,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-16,UNKNOWN,21.0,False,HIGH
+CONN0144,APP035,Privileged Access Workstation,UNKNOWN,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2024-05-07,UNKNOWN,671.0,True,HIGH
+CONN0145,APP036,Backup & Recovery System,it.infra@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2024-09-21,UNKNOWN,534.0,True,HIGH
+CONN0146,APP036,Backup & Recovery System,it.infra@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-31,it.infra@cmacgm.com,129.0,False,HIGH
+CONN0147,APP037,Vessel Performance Analytics,fleet.analytics@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-11-23,fleet.analytics@cmacgm.com,106.0,False,MEDIUM
+CONN0148,APP037,Vessel Performance Analytics,fleet.analytics@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-11-18,fleet.analytics@cmacgm.com,111.0,False,MEDIUM
+CONN0149,APP037,Vessel Performance Analytics,fleet.analytics@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-12-30,fleet.analytics@cmacgm.com,69.0,False,MEDIUM
+CONN0150,APP038,Carbon Footprint Tracker,sustainability@cmacgm.com,Sustainability,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-19,sustainability@cmacgm.com,49.0,False,MEDIUM
+CONN0151,APP038,Carbon Footprint Tracker,sustainability@cmacgm.com,Sustainability,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-11,sustainability@cmacgm.com,57.0,False,MEDIUM
+CONN0152,APP038,Carbon Footprint Tracker,sustainability@cmacgm.com,Sustainability,Production,MEDIUM,No,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-10-26,sustainability@cmacgm.com,134.0,False,MEDIUM
+CONN0153,APP039,Supplier Portal,procurement@cmacgm.com,Finance,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-14,procurement@cmacgm.com,23.0,False,MEDIUM
+CONN0154,APP040,GDPR Data Subject Request Tool,dpo@cmacgm.com,Legal,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-30,dpo@cmacgm.com,69.0,False,HIGH
+CONN0155,APP040,GDPR Data Subject Request Tool,dpo@cmacgm.com,Legal,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-01,dpo@cmacgm.com,98.0,False,HIGH
+CONN0156,APP040,GDPR Data Subject Request Tool,dpo@cmacgm.com,Legal,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-12-15,dpo@cmacgm.com,84.0,False,HIGH
+CONN0157,APP040,GDPR Data Subject Request Tool,dpo@cmacgm.com,Legal,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-31,dpo@cmacgm.com,68.0,False,HIGH
+CONN0158,APP041,Whistleblowing Platform,ethics@cmacgm.com,Legal,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-04,ethics@cmacgm.com,125.0,False,HIGH
+CONN0159,APP041,Whistleblowing Platform,ethics@cmacgm.com,Legal,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-09,ethics@cmacgm.com,28.0,False,HIGH
+CONN0160,APP041,Whistleblowing Platform,ethics@cmacgm.com,Legal,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-18,ethics@cmacgm.com,111.0,False,HIGH
+CONN0161,APP041,Whistleblowing Platform,ethics@cmacgm.com,Legal,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-06-25,ethics@cmacgm.com,257.0,True,HIGH
+CONN0162,APP042,Incident Management System,hse@cmacgm.com,HSE,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-09-30,hse@cmacgm.com,160.0,False,MEDIUM
+CONN0163,APP042,Incident Management System,hse@cmacgm.com,HSE,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-23,hse@cmacgm.com,137.0,False,MEDIUM
+CONN0164,APP042,Incident Management System,hse@cmacgm.com,HSE,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-16,hse@cmacgm.com,113.0,False,MEDIUM
+CONN0165,APP043,Container Planning System,operations.planning@cmacgm.com,Operations,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-21,operations.planning@cmacgm.com,47.0,False,HIGH
+CONN0166,APP043,Container Planning System,operations.planning@cmacgm.com,Operations,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-24,operations.planning@cmacgm.com,75.0,False,HIGH
+CONN0167,APP043,Container Planning System,operations.planning@cmacgm.com,Operations,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-15,operations.planning@cmacgm.com,145.0,False,HIGH
+CONN0168,APP043,Container Planning System,operations.planning@cmacgm.com,Operations,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-01,operations.planning@cmacgm.com,36.0,False,HIGH
+CONN0169,APP043,Container Planning System,operations.planning@cmacgm.com,Operations,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2024-02-25,UNKNOWN,743.0,True,HIGH
+CONN0170,APP044,Demurrage & Detention System,commercial.ops@cmacgm.com,Commercial,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,PENDING,,UNKNOWN,,False,MEDIUM
+CONN0171,APP044,Demurrage & Detention System,commercial.ops@cmacgm.com,Commercial,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-14,commercial.ops@cmacgm.com,85.0,False,MEDIUM
+CONN0172,APP044,Demurrage & Detention System,commercial.ops@cmacgm.com,Commercial,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-12-19,commercial.ops@cmacgm.com,80.0,False,MEDIUM
+CONN0173,APP045,Rate Management System,pricing@cmacgm.com,Commercial,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-04-24,pricing@cmacgm.com,319.0,True,HIGH
+CONN0174,APP045,Rate Management System,pricing@cmacgm.com,Commercial,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2024-02-17,pricing@cmacgm.com,751.0,True,HIGH
+CONN0175,APP045,Rate Management System,pricing@cmacgm.com,Commercial,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,PENDING,,UNKNOWN,,False,HIGH
+CONN0176,APP045,Rate Management System,pricing@cmacgm.com,Commercial,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2026-01-22,UNKNOWN,46.0,False,HIGH
+CONN0177,APP046,Document Management System,records@cmacgm.com,Legal,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,PENDING,,UNKNOWN,,False,MEDIUM
+CONN0178,APP046,Document Management System,records@cmacgm.com,Legal,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-15,UNKNOWN,145.0,False,MEDIUM
+CONN0179,APP046,Document Management System,records@cmacgm.com,Legal,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-05,records@cmacgm.com,32.0,False,MEDIUM
+CONN0180,APP047,Warehouse Management System,logistics.wms@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-09-22,logistics.wms@cmacgm.com,168.0,False,MEDIUM
+CONN0181,APP047,Warehouse Management System,logistics.wms@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-20,logistics.wms@cmacgm.com,17.0,False,MEDIUM
+CONN0182,APP047,Warehouse Management System,logistics.wms@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-06-26,logistics.wms@cmacgm.com,256.0,True,MEDIUM
+CONN0183,APP048,Last Mile Delivery Platform,logistics.lastmile@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-11-05,logistics.lastmile@cmacgm.com,124.0,False,MEDIUM
+CONN0184,APP048,Last Mile Delivery Platform,logistics.lastmile@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-19,logistics.lastmile@cmacgm.com,80.0,False,MEDIUM
+CONN0185,APP048,Last Mile Delivery Platform,logistics.lastmile@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-10-04,logistics.lastmile@cmacgm.com,156.0,False,MEDIUM
+CONN0186,APP049,Tax Management System,tax@cmacgm.com,Finance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-02-02,tax@cmacgm.com,35.0,False,HIGH
+CONN0187,APP049,Tax Management System,tax@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-04-20,tax@cmacgm.com,323.0,True,HIGH
+CONN0188,APP049,Tax Management System,tax@cmacgm.com,Finance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-12,tax@cmacgm.com,56.0,False,HIGH
+CONN0189,APP049,Tax Management System,tax@cmacgm.com,Finance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-28,tax@cmacgm.com,101.0,False,HIGH
+CONN0190,APP049,Tax Management System,tax@cmacgm.com,Finance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-11-30,tax@cmacgm.com,99.0,False,HIGH
+CONN0191,APP050,Audit Management System,internal.audit@cmacgm.com,Compliance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-02-22,internal.audit@cmacgm.com,746.0,True,HIGH
+CONN0192,APP050,Audit Management System,internal.audit@cmacgm.com,Compliance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-01-31,internal.audit@cmacgm.com,37.0,False,HIGH
+CONN0193,APP050,Audit Management System,internal.audit@cmacgm.com,Compliance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,PENDING,,UNKNOWN,,False,HIGH
+CONN0194,APP050,Audit Management System,internal.audit@cmacgm.com,Compliance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0195,APP051,Board Portal,executive@cmacgm.com,Executive,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-11-03,executive@cmacgm.com,126.0,False,HIGH
+CONN0196,APP051,Board Portal,executive@cmacgm.com,Executive,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-19,executive@cmacgm.com,141.0,False,HIGH
+CONN0197,APP051,Board Portal,executive@cmacgm.com,Executive,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,PENDING,,UNKNOWN,,False,HIGH
+CONN0198,APP052,M&A Dataroom,strategy@cmacgm.com,Strategy,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-09-03,strategy@cmacgm.com,552.0,True,HIGH
+CONN0199,APP052,M&A Dataroom,strategy@cmacgm.com,Strategy,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-10-25,strategy@cmacgm.com,135.0,False,HIGH
+CONN0200,APP052,M&A Dataroom,strategy@cmacgm.com,Strategy,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-19,strategy@cmacgm.com,49.0,False,HIGH
+CONN0201,APP052,M&A Dataroom,strategy@cmacgm.com,Strategy,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-12-17,strategy@cmacgm.com,82.0,False,HIGH
+CONN0202,APP053,Sanctions Screening Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-04,compliance@cmacgm.com,156.0,False,HIGH
+CONN0203,APP053,Sanctions Screening Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2024-08-03,compliance@cmacgm.com,583.0,True,HIGH
+CONN0204,APP053,Sanctions Screening Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-11-13,compliance@cmacgm.com,116.0,False,HIGH
+CONN0205,APP053,Sanctions Screening Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-08,compliance@cmacgm.com,121.0,False,HIGH
+CONN0206,APP053,Sanctions Screening Tool,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0207,APP054,Anti-Money Laundering System,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,PENDING,,UNKNOWN,,False,HIGH
+CONN0208,APP054,Anti-Money Laundering System,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2026-01-30,compliance@cmacgm.com,38.0,False,HIGH
+CONN0209,APP054,Anti-Money Laundering System,compliance@cmacgm.com,Compliance,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-02-03,compliance@cmacgm.com,399.0,True,HIGH
+CONN0210,APP055,Vessel Fuel Management,fleet.fuel@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-02-05,fleet.fuel@cmacgm.com,32.0,False,MEDIUM
+CONN0211,APP055,Vessel Fuel Management,fleet.fuel@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-09,fleet.fuel@cmacgm.com,28.0,False,MEDIUM
+CONN0212,APP056,Port Community System Integration,port.ops@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-04-11,port.ops@cmacgm.com,332.0,True,MEDIUM
+CONN0213,APP056,Port Community System Integration,port.ops@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-15,port.ops@cmacgm.com,22.0,False,MEDIUM
+CONN0214,APP056,Port Community System Integration,port.ops@cmacgm.com,Operations,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-10-21,port.ops@cmacgm.com,139.0,False,MEDIUM
+CONN0215,APP057,Dev Test Environment,UNKNOWN,IT,Development,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-07,UNKNOWN,30.0,False,LOW
+CONN0216,APP058,QA Testing Platform,qa.team@cmacgm.com,IT,Development,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-12-26,qa.team@cmacgm.com,73.0,False,LOW
+CONN0217,APP059,Staging Environment,dev.team@cmacgm.com,IT,Staging,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-05-28,dev.team@cmacgm.com,285.0,True,MEDIUM
+CONN0218,APP060,Employee Self-Service Portal,hr.ess@cmacgm.com,Human Resources,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2024-10-31,hr.ess@cmacgm.com,494.0,True,MEDIUM
+CONN0219,APP060,Employee Self-Service Portal,hr.ess@cmacgm.com,Human Resources,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-24,hr.ess@cmacgm.com,44.0,False,MEDIUM
+CONN0220,APP060,Employee Self-Service Portal,hr.ess@cmacgm.com,Human Resources,Production,MEDIUM,No,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2026-02-11,hr.ess@cmacgm.com,26.0,False,MEDIUM
+CONN0221,APP061,Travel & Expense Management,finance.travel@cmacgm.com,Finance,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-26,finance.travel@cmacgm.com,73.0,False,MEDIUM
+CONN0222,APP061,Travel & Expense Management,finance.travel@cmacgm.com,Finance,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-03-20,finance.travel@cmacgm.com,354.0,True,MEDIUM
+CONN0223,APP062,Video Conferencing Teams,it.collab@cmacgm.com,IT,Production,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-03,it.collab@cmacgm.com,65.0,False,LOW
+CONN0224,APP063,File Sharing OneDrive,it.collab@cmacgm.com,IT,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2025-09-26,it.collab@cmacgm.com,164.0,False,MEDIUM
+CONN0225,APP063,File Sharing OneDrive,it.collab@cmacgm.com,IT,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-20,it.collab@cmacgm.com,140.0,False,MEDIUM
+CONN0226,APP063,File Sharing OneDrive,it.collab@cmacgm.com,IT,Production,MEDIUM,No,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-06-23,it.collab@cmacgm.com,259.0,True,MEDIUM
+CONN0227,APP064,Internal Wiki Confluence,UNKNOWN,IT,Production,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-11-18,UNKNOWN,111.0,False,LOW
+CONN0228,APP065,Project Management Jira,it.pmo@cmacgm.com,IT,Production,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,UNDOCUMENTED,,UNKNOWN,,False,MEDIUM
+CONN0229,APP066,Code Repository GitHub Enterprise,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-10-16,dev.team@cmacgm.com,144.0,False,MEDIUM
+CONN0230,APP066,Code Repository GitHub Enterprise,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-25,dev.team@cmacgm.com,135.0,False,MEDIUM
+CONN0231,APP067,CI/CD Pipeline Azure DevOps,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-01-12,dev.team@cmacgm.com,787.0,True,MEDIUM
+CONN0232,APP067,CI/CD Pipeline Azure DevOps,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-13,dev.team@cmacgm.com,55.0,False,MEDIUM
+CONN0233,APP067,CI/CD Pipeline Azure DevOps,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-12-06,dev.team@cmacgm.com,93.0,False,MEDIUM
+CONN0234,APP068,Container Registry ACR,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2024-06-25,dev.team@cmacgm.com,622.0,True,MEDIUM
+CONN0235,APP068,Container Registry ACR,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-11-06,dev.team@cmacgm.com,123.0,False,MEDIUM
+CONN0236,APP068,Container Registry ACR,dev.team@cmacgm.com,IT,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,PENDING,,UNKNOWN,,False,MEDIUM
+CONN0237,APP069,Kubernetes Cluster AKS,it.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-04,it.platform@cmacgm.com,95.0,False,HIGH
+CONN0238,APP069,Kubernetes Cluster AKS,it.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-04,it.platform@cmacgm.com,156.0,False,HIGH
+CONN0239,APP069,Kubernetes Cluster AKS,it.platform@cmacgm.com,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,UNDOCUMENTED,,UNKNOWN,,False,HIGH
+CONN0240,APP070,API Gateway,UNKNOWN,IT,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-12-19,UNKNOWN,80.0,False,HIGH
+CONN0241,APP070,API Gateway,UNKNOWN,IT,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2025-10-25,UNKNOWN,135.0,False,HIGH
+CONN0242,APP070,API Gateway,UNKNOWN,IT,Production,HIGH,Yes,IAM005,Identity Governance & Administration (IGA),Governance,Active,2025-10-20,UNKNOWN,140.0,False,HIGH
+CONN0243,APP071,Legacy Billing System,finance.billing@cmacgm.com,Finance,Production,HIGH,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2025-12-22,finance.billing@cmacgm.com,77.0,False,HIGH
+CONN0244,APP071,Legacy Billing System,finance.billing@cmacgm.com,Finance,Production,HIGH,Yes,IAM002,Privileged Access Management (PAM),Privileged Access,Active,2025-02-02,finance.billing@cmacgm.com,400.0,True,HIGH
+CONN0245,APP071,Legacy Billing System,finance.billing@cmacgm.com,Finance,Production,HIGH,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2024-08-10,finance.billing@cmacgm.com,576.0,True,HIGH
+CONN0246,APP071,Legacy Billing System,finance.billing@cmacgm.com,Finance,Production,HIGH,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-12-16,UNKNOWN,83.0,False,HIGH
+CONN0247,APP072,Archival Storage System,records@cmacgm.com,Legal,Production,LOW,No,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-02-11,records@cmacgm.com,26.0,False,LOW
+CONN0248,APP073,EMEA Regional HR Portal,hr.emea@cmacgm.com,Human Resources,Production,MEDIUM,No,IAM001,Azure Active Directory,Identity Provider,Active,2024-03-20,hr.emea@cmacgm.com,719.0,True,MEDIUM
+CONN0249,APP073,EMEA Regional HR Portal,hr.emea@cmacgm.com,Human Resources,Production,MEDIUM,No,IAM003,Role-Based Access Control (RBAC),Access Control,PENDING,,UNKNOWN,,False,MEDIUM
+CONN0250,APP073,EMEA Regional HR Portal,hr.emea@cmacgm.com,Human Resources,Production,MEDIUM,No,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-11-13,hr.emea@cmacgm.com,116.0,False,MEDIUM
+CONN0251,APP074,APAC Regional Finance Portal,finance.apac@cmacgm.com,Finance,Production,MEDIUM,Yes,IAM001,Azure Active Directory,Identity Provider,Active,2026-01-27,finance.apac@cmacgm.com,41.0,False,MEDIUM
+CONN0252,APP074,APAC Regional Finance Portal,finance.apac@cmacgm.com,Finance,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,Active,2026-01-25,finance.apac@cmacgm.com,43.0,False,MEDIUM
+CONN0253,APP074,APAC Regional Finance Portal,finance.apac@cmacgm.com,Finance,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2024-03-30,finance.apac@cmacgm.com,709.0,True,MEDIUM
+CONN0254,APP075,Americas Logistics Portal,logistics.americas@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM003,Role-Based Access Control (RBAC),Access Control,PENDING,,UNKNOWN,,False,MEDIUM
+CONN0255,APP075,Americas Logistics Portal,logistics.americas@cmacgm.com,Logistics,Production,MEDIUM,Yes,IAM004,Multi-Factor Authentication (MFA),Authentication,Active,2025-04-29,logistics.americas@cmacgm.com,314.0,True,MEDIUM
