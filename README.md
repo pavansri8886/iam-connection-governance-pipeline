@@ -1,4 +1,4 @@
-# 🔐 IAM Connection Governance Pipeline
+# 🔐 IAM Governance Simulation Project aligned with enterprise application risk mapping
 
 > **Simulating enterprise-scale Identity & Access Management governance for a global shipping company — 75 applications, 255 connections, 14 departments, 96 governance gaps detected.**
 
