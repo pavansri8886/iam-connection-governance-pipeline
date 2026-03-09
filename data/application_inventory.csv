@@ -1,0 +1,76 @@
+app_id,app_name,owner,department,sub_department,environment,data_sensitivity,business_critical,region,last_updated
+APP001,SAP HR Core,hr.admin@cmacgm.com,Human Resources,HR Systems,Production,HIGH,Yes,Global,2024-01-15
+APP002,SAP Finance ERP,cfo.office@cmacgm.com,Finance,ERP,Production,HIGH,Yes,Global,2024-02-10
+APP003,Vessel Tracking System,fleet.ops@cmacgm.com,Operations,Fleet Management,Production,HIGH,Yes,Global,2024-03-01
+APP004,Customer Portal,digital@cmacgm.com,Commercial,Digital,Production,HIGH,Yes,Global,2024-02-20
+APP005,Freight Booking Platform,booking@cmacgm.com,Commercial,Booking,Production,HIGH,Yes,Global,2024-01-30
+APP006,Port Operations Dashboard,port.ops@cmacgm.com,Operations,Port Management,Production,HIGH,Yes,Global,2024-03-10
+APP007,Payroll System,hr.payroll@cmacgm.com,Human Resources,Payroll,Production,HIGH,Yes,Global,2023-11-05
+APP008,Treasury Management System,treasury@cmacgm.com,Finance,Treasury,Production,HIGH,Yes,Global,2024-02-15
+APP009,Legal Document Management,legal@cmacgm.com,Legal,Contracts,Production,HIGH,Yes,Global,2024-01-20
+APP010,Email Gateway,it.admin@cmacgm.com,IT,Infrastructure,Production,HIGH,Yes,Global,2024-02-10
+APP011,VPN & Remote Access Gateway,it.security@cmacgm.com,IT,Security,Production,HIGH,Yes,Global,2024-03-05
+APP012,Active Directory,it.iam@cmacgm.com,IT,IAM,Production,HIGH,Yes,Global,2024-03-01
+APP013,Azure AD,it.iam@cmacgm.com,IT,IAM,Production,HIGH,Yes,Global,2024-03-01
+APP014,CEVA Logistics TMS,logistics.ops@cmacgm.com,Logistics,Transport Management,Production,HIGH,Yes,Global,2024-02-28
+APP015,Air Cargo Booking System,aircargo@cmacgm.com,Air Cargo,Booking,Production,HIGH,Yes,Global,2024-02-15
+APP016,Container Tracking API,api.team@cmacgm.com,IT,APIs,Production,HIGH,Yes,Global,2024-03-05
+APP017,Customs Clearance Platform,customs@cmacgm.com,Compliance,Customs,Production,HIGH,Yes,Global,2024-01-25
+APP018,Trade Finance Platform,tradefinance@cmacgm.com,Finance,Trade Finance,Production,HIGH,Yes,Global,2024-02-05
+APP019,Risk Management System,risk@cmacgm.com,Compliance,Risk,Production,HIGH,Yes,Global,2024-01-10
+APP020,Procurement Platform,procurement@cmacgm.com,Finance,Procurement,Production,HIGH,Yes,Global,2024-02-20
+APP021,Fleet Maintenance System,fleet.maintenance@cmacgm.com,Operations,Fleet Management,Production,HIGH,Yes,Global,2024-03-01
+APP022,Crew Management System,crew.mgmt@cmacgm.com,Operations,Crew,Production,HIGH,Yes,Global,2024-01-15
+APP023,Port Agency Management,port.agency@cmacgm.com,Operations,Port Management,Production,MEDIUM,Yes,EMEA,2024-02-10
+APP024,Dangerous Goods Management,hse@cmacgm.com,HSE,Compliance,Production,HIGH,Yes,Global,2024-01-20
+APP025,Invoice Processing System,finance.ops@cmacgm.com,Finance,Accounts Payable,Production,HIGH,Yes,Global,2024-02-25
+APP026,CRM Salesforce,sales@cmacgm.com,Commercial,Sales,Production,MEDIUM,Yes,Global,2024-03-01
+APP027,Marketing Automation,marketing@cmacgm.com,Commercial,Marketing,Production,MEDIUM,No,Global,2024-01-30
+APP028,Business Intelligence Platform,bi.team@cmacgm.com,IT,Analytics,Production,MEDIUM,Yes,Global,2024-02-15
+APP029,Data Warehouse,data.platform@cmacgm.com,IT,Data,Production,HIGH,Yes,Global,2024-03-01
+APP030,Compliance Reporting Tool,compliance@cmacgm.com,Compliance,Reporting,Production,HIGH,Yes,Global,2024-01-15
+APP031,Internal Intranet,comms@cmacgm.com,Communications,Internal Comms,Production,MEDIUM,No,Global,2024-02-01
+APP032,Learning Management System,hr.learning@cmacgm.com,Human Resources,Learning,Production,LOW,No,Global,2024-01-20
+APP033,IT Service Desk ServiceNow,it.servicedesk@cmacgm.com,IT,Service Management,Production,MEDIUM,Yes,Global,2024-03-05
+APP034,SIEM Splunk,it.security@cmacgm.com,IT,Security,Production,HIGH,Yes,Global,2024-02-20
+APP035,Privileged Access Workstation,,IT,Security,Production,HIGH,Yes,Global,2023-09-01
+APP036,Backup & Recovery System,it.infra@cmacgm.com,IT,Infrastructure,Production,HIGH,Yes,Global,2024-01-10
+APP037,Vessel Performance Analytics,fleet.analytics@cmacgm.com,Operations,Analytics,Production,MEDIUM,Yes,Global,2024-02-15
+APP038,Carbon Footprint Tracker,sustainability@cmacgm.com,Sustainability,Reporting,Production,MEDIUM,No,Global,2024-02-01
+APP039,Supplier Portal,procurement@cmacgm.com,Finance,Procurement,Production,MEDIUM,Yes,Global,2024-01-25
+APP040,GDPR Data Subject Request Tool,dpo@cmacgm.com,Legal,Data Privacy,Production,HIGH,Yes,Global,2024-02-10
+APP041,Whistleblowing Platform,ethics@cmacgm.com,Legal,Ethics,Production,HIGH,Yes,Global,2024-01-05
+APP042,Incident Management System,hse@cmacgm.com,HSE,Safety,Production,MEDIUM,Yes,Global,2024-02-20
+APP043,Container Planning System,operations.planning@cmacgm.com,Operations,Planning,Production,HIGH,Yes,Global,2024-03-01
+APP044,Demurrage & Detention System,commercial.ops@cmacgm.com,Commercial,Operations,Production,MEDIUM,Yes,EMEA,2024-02-15
+APP045,Rate Management System,pricing@cmacgm.com,Commercial,Pricing,Production,HIGH,Yes,Global,2024-01-30
+APP046,Document Management System,records@cmacgm.com,Legal,Records,Production,MEDIUM,Yes,Global,2024-02-05
+APP047,Warehouse Management System,logistics.wms@cmacgm.com,Logistics,Warehouse,Production,MEDIUM,Yes,Global,2024-02-28
+APP048,Last Mile Delivery Platform,logistics.lastmile@cmacgm.com,Logistics,Last Mile,Production,MEDIUM,Yes,Global,2024-03-01
+APP049,Tax Management System,tax@cmacgm.com,Finance,Tax,Production,HIGH,Yes,Global,2024-01-20
+APP050,Audit Management System,internal.audit@cmacgm.com,Compliance,Audit,Production,HIGH,Yes,Global,2024-02-10
+APP051,Board Portal,executive@cmacgm.com,Executive,Governance,Production,HIGH,Yes,Global,2024-01-15
+APP052,M&A Dataroom,strategy@cmacgm.com,Strategy,M&A,Production,HIGH,Yes,Global,2023-12-01
+APP053,Sanctions Screening Tool,compliance@cmacgm.com,Compliance,Sanctions,Production,HIGH,Yes,Global,2024-02-20
+APP054,Anti-Money Laundering System,compliance@cmacgm.com,Compliance,AML,Production,HIGH,Yes,Global,2024-01-25
+APP055,Vessel Fuel Management,fleet.fuel@cmacgm.com,Operations,Fleet Management,Production,MEDIUM,Yes,Global,2024-02-15
+APP056,Port Community System Integration,port.ops@cmacgm.com,Operations,Port Management,Production,MEDIUM,Yes,EMEA,2024-03-01
+APP057,Dev Test Environment,,IT,Development,Development,LOW,No,Global,2024-03-05
+APP058,QA Testing Platform,qa.team@cmacgm.com,IT,Quality Assurance,Development,LOW,No,Global,2024-02-28
+APP059,Staging Environment,dev.team@cmacgm.com,IT,Development,Staging,LOW,No,Global,2024-03-01
+APP060,Employee Self-Service Portal,hr.ess@cmacgm.com,Human Resources,Employee Services,Production,MEDIUM,No,Global,2024-02-10
+APP061,Travel & Expense Management,finance.travel@cmacgm.com,Finance,T&E,Production,MEDIUM,No,Global,2024-01-30
+APP062,Video Conferencing Teams,it.collab@cmacgm.com,IT,Collaboration,Production,LOW,No,Global,2024-03-01
+APP063,File Sharing OneDrive,it.collab@cmacgm.com,IT,Collaboration,Production,MEDIUM,No,Global,2024-02-15
+APP064,Internal Wiki Confluence,,IT,Knowledge Management,Production,LOW,No,Global,2023-05-01
+APP065,Project Management Jira,it.pmo@cmacgm.com,IT,PMO,Production,LOW,No,Global,2024-01-20
+APP066,Code Repository GitHub Enterprise,dev.team@cmacgm.com,IT,Development,Production,MEDIUM,Yes,Global,2024-03-01
+APP067,CI/CD Pipeline Azure DevOps,dev.team@cmacgm.com,IT,Development,Production,MEDIUM,Yes,Global,2024-02-20
+APP068,Container Registry ACR,dev.team@cmacgm.com,IT,Development,Production,MEDIUM,Yes,Global,2024-02-15
+APP069,Kubernetes Cluster AKS,it.platform@cmacgm.com,IT,Platform,Production,HIGH,Yes,Global,2024-03-01
+APP070,API Gateway,,IT,APIs,Production,HIGH,Yes,Global,2023-08-01
+APP071,Legacy Billing System,finance.billing@cmacgm.com,Finance,Billing,Production,HIGH,Yes,Global,2022-06-01
+APP072,Archival Storage System,records@cmacgm.com,Legal,Records,Production,LOW,No,Global,2022-01-01
+APP073,EMEA Regional HR Portal,hr.emea@cmacgm.com,Human Resources,Regional HR,Production,MEDIUM,No,EMEA,2024-01-15
+APP074,APAC Regional Finance Portal,finance.apac@cmacgm.com,Finance,Regional Finance,Production,MEDIUM,Yes,APAC,2024-02-01
+APP075,Americas Logistics Portal,logistics.americas@cmacgm.com,Logistics,Regional Ops,Production,MEDIUM,Yes,Americas,2024-02-10

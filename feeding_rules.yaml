@@ -1,0 +1,304 @@
+# =============================================================================
+# IAM Connection Governance — Feeding Rules Configuration
+# =============================================================================
+# This file defines the authoritative source for each data field,
+# conflict resolution strategy, and update frequency.
+#
+# Feeding rule types:
+#   AUTHORITATIVE  — only one source owns this field, others are ignored
+#   MERGE          — combine values from multiple sources
+#   FALLBACK       — use primary source, fall back to secondary if missing
+#   CALCULATED     — derived from other fields, not sourced directly
+#
+# Update modes:
+#   AUTOMATIC      — pipeline refreshes this on every run
+#   MANUAL         — requires human review before update
+#   SCHEDULED      — refreshed on defined cycle only
+# =============================================================================
+
+fields:
+
+  # --- Application Identity Fields ---
+  app_id:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+    notes: "App IDs are assigned by IT governance. Changes require change request."
+
+  app_name:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+    notes: "Official application name from CMDB. Must match ServiceNow record."
+
+  owner:
+    authoritative_source: application_inventory
+    type: FALLBACK
+    fallback_source: connection_log
+    update_mode: MANUAL
+    conflict_resolution: flag_for_review
+    notes: "Owner must be confirmed by department head. Unknown owners trigger UNKNOWN_OWNER gap."
+
+  department:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+
+  data_sensitivity:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: SCHEDULED
+    schedule_days: 90
+    conflict_resolution: escalate_to_iam_team
+    notes: "Sensitivity classification reviewed quarterly by Data Protection Officer."
+
+  business_critical:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: SCHEDULED
+    schedule_days: 180
+    conflict_resolution: escalate_to_iam_team
+
+  environment:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+
+  region:
+    authoritative_source: application_inventory
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+
+  # --- IAM Product Fields ---
+  iam_product_id:
+    authoritative_source: iam_product_registry
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+    notes: "IAM product list maintained by IAM team. New products require architecture approval."
+
+  product_name:
+    authoritative_source: iam_product_registry
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: reject_update
+
+  required_for_sensitivity:
+    authoritative_source: iam_product_registry
+    type: AUTHORITATIVE
+    update_mode: SCHEDULED
+    schedule_days: 180
+    conflict_resolution: escalate_to_iam_team
+    notes: "IAM coverage requirements reviewed semi-annually by CISO office."
+
+  review_cycle_days:
+    authoritative_source: iam_product_registry
+    type: AUTHORITATIVE
+    update_mode: SCHEDULED
+    schedule_days: 365
+    conflict_resolution: escalate_to_iam_team
+
+  # --- Connection Status Fields ---
+  connection_status:
+    authoritative_source: connection_log
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: flag_for_review
+    notes: "Updated by application owners or IAM team after each access review."
+
+  last_reviewed:
+    authoritative_source: connection_log
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: use_most_recent
+    notes: "Must be updated within 24 hours of completing an access review."
+
+  reviewed_by:
+    authoritative_source: connection_log
+    type: AUTHORITATIVE
+    update_mode: MANUAL
+    conflict_resolution: flag_for_review
+
+  # --- Calculated Fields (pipeline-derived) ---
+  risk_range:
+    authoritative_source: pipeline
+    type: CALCULATED
+    update_mode: AUTOMATIC
+    formula: "sensitivity + business_critical + environment + connection_status + staleness"
+    notes: "Recalculated on every pipeline run. Cannot be manually overridden."
+
+  days_since_review:
+    authoritative_source: pipeline
+    type: CALCULATED
+    update_mode: AUTOMATIC
+    formula: "today - last_reviewed"
+
+  is_stale:
+    authoritative_source: pipeline
+    type: CALCULATED
+    update_mode: AUTOMATIC
+    formula: "days_since_review > review_cycle_days"
+
+  remediation_deadline:
+    authoritative_source: pipeline
+    type: CALCULATED
+    update_mode: AUTOMATIC
+    formula: "based on gap_type and risk_range — see remediation_rules below"
+
+# =============================================================================
+# Conflict Resolution Procedures
+# =============================================================================
+conflict_procedures:
+
+  reject_update:
+    action: "Keep existing value. Log conflict. Raise alert to IAM team."
+    escalation: iam_team
+
+  flag_for_review:
+    action: "Keep existing value. Add to manual review queue. Notify owner."
+    escalation: application_owner
+    sla_days: 7
+
+  use_most_recent:
+    action: "Use the most recent timestamp. Log the overwrite."
+    escalation: none
+
+  escalate_to_iam_team:
+    action: "Freeze field. Raise governance ticket. IAM team resolves within SLA."
+    escalation: iam_team
+    sla_days: 5
+
+# =============================================================================
+# Remediation Rules — defines deadlines per gap type and risk range
+# =============================================================================
+remediation_rules:
+
+  MISSING_CONNECTION:
+    HIGH:
+      deadline_days: 7
+      priority: CRITICAL
+      owner: iam_team
+      action: "Connect application to required IAM product immediately. Raise change request."
+    MEDIUM:
+      deadline_days: 30
+      priority: HIGH
+      owner: application_owner
+      action: "Schedule connection with IAM team within 30 days."
+    LOW:
+      deadline_days: 90
+      priority: MEDIUM
+      owner: application_owner
+      action: "Plan connection in next quarterly IAM review cycle."
+
+  STALE_REVIEW:
+    HIGH:
+      deadline_days: 3
+      priority: CRITICAL
+      owner: application_owner
+      action: "Complete access review immediately. Escalate if owner unresponsive after 24h."
+    MEDIUM:
+      deadline_days: 14
+      priority: HIGH
+      owner: application_owner
+      action: "Schedule and complete access review within 14 days."
+    LOW:
+      deadline_days: 30
+      priority: MEDIUM
+      owner: application_owner
+      action: "Complete access review in next scheduled cycle."
+
+  UNDOCUMENTED_CONNECTION:
+    HIGH:
+      deadline_days: 1
+      priority: CRITICAL
+      owner: iam_team
+      action: "Investigate and document or remove connection within 24 hours."
+    MEDIUM:
+      deadline_days: 7
+      priority: HIGH
+      owner: application_owner
+      action: "Review and document connection status within 7 days."
+    LOW:
+      deadline_days: 30
+      priority: MEDIUM
+      owner: application_owner
+      action: "Document connection in next review cycle."
+
+  UNKNOWN_OWNER:
+    HIGH:
+      deadline_days: 2
+      priority: CRITICAL
+      owner: department_head
+      action: "Assign application owner within 48 hours. Application access may be suspended."
+    MEDIUM:
+      deadline_days: 7
+      priority: HIGH
+      owner: department_head
+      action: "Assign owner within 7 days."
+    LOW:
+      deadline_days: 30
+      priority: MEDIUM
+      owner: department_head
+      action: "Assign owner in next quarterly review."
+
+  MISSING_REVIEW_DATE:
+    HIGH:
+      deadline_days: 3
+      priority: HIGH
+      owner: application_owner
+      action: "Confirm review date with application owner within 3 days."
+    MEDIUM:
+      deadline_days: 14
+      priority: MEDIUM
+      owner: application_owner
+      action: "Confirm and record review date within 14 days."
+    LOW:
+      deadline_days: 30
+      priority: LOW
+      owner: application_owner
+      action: "Record review date in next scheduled update."
+
+# =============================================================================
+# Communication Channels — defines how outputs are distributed
+# =============================================================================
+communication_channels:
+
+  iam_governance_report_html:
+    format: HTML
+    audience: ["Control Tower team", "IAM Manager", "CISO"]
+    channel: Intranet SharePoint
+    frequency: Weekly automated publish
+    access_control: IAM team + senior management
+
+  master_map_csv:
+    format: CSV
+    audience: ["GRC tooling", "Audit systems", "ServiceNow CMDB"]
+    channel: Automated system integration via API
+    frequency: Every pipeline run
+    access_control: System accounts only
+
+  governance_gaps_csv:
+    format: CSV
+    audience: ["Application owners", "Department heads"]
+    channel: Email distribution list per department
+    frequency: Weekly on Monday 08:00
+    access_control: Per-department filtered view
+
+  remediation_queue:
+    format: CSV + ServiceNow tickets
+    audience: ["Application owners", "IAM team"]
+    channel: ServiceNow + email
+    frequency: Real-time on gap detection
+    access_control: Ticket assigned to owner only
+
+  executive_summary:
+    format: HTML one-pager
+    audience: ["CTO", "CISO", "Head of IT Governance"]
+    channel: Email + Board Portal
+    frequency: Monthly
+    access_control: Executive distribution list
